@@ -57,9 +57,21 @@ color:#ff4081;
 </head>
 
 <body>
+<div id="welcomePage" style="height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(to right,#ffd6e7,#fff0f5);text-align:center;padding:20px;">
 
-<div class="container">
+<h1 style="color:#ff4081;">🎂 Happy Birthday Aayu ❤️</h1>
 
+<p style="font-size:22px;">
+Someone special made something for you... 💖
+</p>
+
+<button onclick="openSurprise()"
+style="background:#ff4081;color:white;border:none;padding:15px 30px;border-radius:30px;font-size:20px;cursor:pointer;">
+🎁 Open Your Surprise
+</button>
+
+</div>
+<div class="container" id="surprisePage" style="display:none;">
 <h1>🎂 Happy 20th Birthday Aayu ❤️</h1>
 
 <div class="slideshow">
@@ -75,12 +87,11 @@ color:#ff4081;
 <h2>💌 Dear Aayu</h2>
 
 <p>
-Ha toh tm yeh padh rhe ho toh mai ek baat keh du ki,
-shayad meri saari baatein tm samajh chuke hoge.
+Ha toh ab tm yeh dekho tere liye surprise ek chota sa..
 </p>
 
 <p>
-Yeh scrapbook sirf photos ka collection nahi hai...
+Yeh website bs tere liye bnyi hu thoda sikh kr or yeh sirf site ni ya photos ka collection nahi hai...
 <b>yeh humari journey hai.</b>
 </p>
 
@@ -168,7 +179,13 @@ function createHeart() {
 
 setInterval(createHeart, 800);
 </script>
-
+<script>
+function openSurprise(){
+document.getElementById("welcomePage").style.display = "none";
+document.getElementById("surprisePage").style.display = "block";
+window.scrollTo(0,0);
+}
+</script>
 </body>
 </html>
 
