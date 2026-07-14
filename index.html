@@ -1,73 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Happy Birthday Aayu ❤️</title>
 
 <style>
 body{
-background: linear-gradient(to right,#ffd6e7,#ffeef5);
-font-family: Arial, sans-serif;
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(to right,#ffd6e7,#fff0f5);
 text-align:center;
-padding:40px;
+}
+
+.container{
+padding:30px;
 }
 
 h1{
 color:#ff4081;
-font-size:50px;
+font-size:45px;
 }
 
-.box{
-background:white;
-padding:30px;
-border-radius:20px;
-max-width:700px;
+.slideshow{
+width:300px;
+height:400px;
 margin:auto;
+border-radius:20px;
+overflow:hidden;
 box-shadow:0 0 20px rgba(0,0,0,0.2);
 }
 
-.photo{
-width:250px;
-height:250px;
-border:3px dashed pink;
-margin:20px auto;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:15px;
+.slideshow img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:none;
 }
 
-p{
-font-size:22px;
+.letter{
+background:white;
+max-width:800px;
+margin:30px auto;
+padding:25px;
+border-radius:20px;
+box-shadow:0 0 15px rgba(0,0,0,0.1);
 line-height:1.8;
+font-size:18px;
+}
+
+.footer{
+font-size:22px;
+margin-top:20px;
+color:#ff4081;
 }
 </style>
-
 </head>
 
 <body>
 
-<div class="box">
+<div class="container">
 
-<h1>🎂 Happy Birthday Aayu ❤️</h1>
+<h1>🎂 Happy 20th Birthday Aayu ❤️</h1>
 
-<div class="photo">
-📸 Photo Add Here
+<div class="slideshow">
+<img class="slide" src="68ed2a6e66f3ce36ec0b8f1e.jpg">
+<img class="slide" src="IMG-20260204-WA0021.jpg">
+<img class="slide" src="IMG-20260204-WA0063.jpg">
+<img class="slide" src="IMG-20260505-WA0099.jpg">
+<img class="slide" src="IMG-20260712-WA0075.jpg">
 </div>
+
+<div class="letter">
+
+<h2>💌 Dear Aayu</h2>
 
 <p>
-Hey Aayu ❤️<br><br>
-
-Today is all about you. ✨<br>
-I hope your day is filled with happiness, smiles and lots of love. 💖<br><br>
-
-Thank you for being such a special part of my life. 🌸<br><br>
-
-Wishing you success, joy and endless happiness always. 🎉
+Ha toh tm yeh padh rhe ho toh mai ek baat keh du ki,
+shayad meri saari baatein tm samajh chuke hoge.
 </p>
 
-<h2>💌 With Love,<br>Janvi ❤️</h2>
+<p>
+Yeh scrapbook sirf photos ka collection nahi hai...
+<b>yeh humari journey hai.</b>
+</p>
+
+<p>
+Telegram se shuru hui ek chhoti si conversation aaj meri life ki sabse beautiful story ban gayi.
+</p>
+
+<p>
+Humne long distance bhi dekha, countdown bhi kiya, pehli baar milne ki excitement bhi feel ki, aur saath mein itni memories bana li ki kabhi kabhi lagta hai time kitna jaldi nikal gaya.
+</p>
+
+<p>
+Thank you har smile ke liye, har memory ke liye, aur unn moments ke liye jo sirf hum dono samajh sakte hain.
+</p>
+
+<p>
+Main bas itna chahti hoon ki tum hamesha khush raho, apne sapne poore karo, aur life mein bahut aage badho.
+</p>
+
+<p>
+Thoda badmashi kam kro, mera baat suna kro. 😜❤️
+</p>
+
+<p>
+Aur haan... kabhi kabhi thoda kam roast kar diya karo. 😂❤️
+</p>
+
+<h3>Happy 20th Birthday, Aayu 🎂❤️</h3>
+
+<p><b>– Yours, Janvi ❤️</b></p>
 
 </div>
+
+<div class="footer">
+Love You So Much Baccha 💋❤️
+</div>
+
+</div>
+
+<script>
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlides(){
+slides.forEach(slide => slide.style.display="none");
+slideIndex++;
+if(slideIndex > slides.length){slideIndex = 1;}
+slides[slideIndex-1].style.display="block";
+setTimeout(showSlides,2500);
+}
+showSlides();
+</script>
 
 </body>
 </html>
